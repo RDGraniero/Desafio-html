@@ -1,0 +1,157 @@
+<html>
+   <head>
+    <title>Desafio do Curso</title>
+   </head> 
+   <body>
+    <h1 id="inicio">Primeiros Passos com HTML</h1>
+    <hr>
+    <h2>Indice</h2>
+    <ul>
+        <li><a href="#Entendendo">Entendendo a Comunicação Client x Server</a></li>
+        <li><a href="#como-funciona">Como funciona o html</a></li>
+        <li><a href="#O-que">O que são Tags</a></li>
+    </ul>
+    <h2 id="Entendendo">História da Web</h2>
+    <smal><a href="#inicio">(Voltar)</a></smal>
+    <h3>Apresentação do curso e professor</h3>
+    <p>Olá Eu sou o Rodrigo e vou ser o seu professor neste curso de primeiros passos com html, mas antes vou falar um pouco sobre a historia dos computadores e da internet para que você se ambiente melhor, e para que caso você não entenda nada sobre computadores tenha uma pequena base de introdução.
+        </p>
+        <h4>História do Computador</h4>
+        <p>Em 1944 Foi criado o Mark 1 o primeiro computador mecânico criado em harvard, ele usava relés mecanicos e tinha ciclos de relógio de 3,0 segundos.
+         <p>Em 1946 o Eniac Foi Projetado por John Mauchly e Jonh Presper Eckert da universidade da Pensilvania o Eniac foi considerado como o primeiro computador eletrônico do mundo, possuia 18.000 válvulas - programadas por 6.000 chaves, pesava 30 toneladas e utilizava ciclo relógio 200 micro-segundos(5 KHz)</p>
+        <p>Em 1949 o EDVAC  foi o primeiro computador que adotou a arquitetura de Von Neumann (programa armazenado), Construido por Jonh Mauchly e jonh Eckert, era um computador binário com memória de 1.000 palavras e 34 bits, Adição leva 864 micro segundor e multiplicação 2900 micro segundos.</p>
+        <p> Em 1952 surgi as valvulas  e o (IAS) Criado por Jonh Von Neumann em princiton, o computador binário com uma memória de 1024 palavras e 40 bits e pesava 450 kilos</p>
+        <p>A partir de 1964 surge os primeiros circuitos integrados reunindo transistores, resistores e capacitores em uma pastilha de semicondutor, com o IBM-360, em 1965 o digital PDP-11 era o mini-computador de grande sucesso dos anos 70, e em 1980 surgi p VLSI (Very Large Scale of Integration) que usamos hoje em dia, essa tecnologia é responsavel pelos avanços que temos hoje, surge então os primeiros computadores pessoais com duas familias de processadores, Intel e Motorola.</p>
+        <h4> Grandes nomes da história da computação</h4> 
+
+       <p>Grace Murray Hopper criadora da linguagem cobol</p>
+
+       <p>Licklider Plantou a semnete de comunicação entre pontos distintos</p>
+        
+       <p>Robert Kahn um dos criadores do tcp/ip e criou o email</p>
+        
+       <p>Tim Berners-Lee Criou o www e popularizou o http e html</p>
+        
+       <p>Marc Andreessen inventou o primeiro navegador o netscape</p>
+        
+       <p>Bill Gates Fundou a microsoft e Criou o internet explorer</p>
+       
+       <p>Steve Jobs Fundador da apple popularizou o smartfone</p>
+
+       <h2>O que são clients</h2>
+       <p>Clients são os que consomen a informação, por exemplo o seu pc quando entra em um site ele esta consumindo a informação deste site.</p>
+       <h4>Navegadores</h4>
+       <p>São programas criados por empresas e seguem padrões W3C que quando instalados no computador são eles que consomen a informação no caso da internet eles utilizam o protocolo http podemos ter como exemplo o Mosaic, Netscape, Explorer, Crome, temos uma grande variedade hoje em dia</p>
+       <h4>Aplicações Web</h4>
+       <p> Aplicações Web são soluçoes criadas que utiliza a internet como meio de comunicação entre client x Server não sendo necessário a sua instalação, são aplicaçoes web o facebook, Linkedin, youtube por exemplo.</p>
+       <h4>Dispositivos Móveis</h4>
+       <p>Os dipositivos móveis são aqueles dispositivos que você pode levar para onde quiser com você por exemplo, seu celular, seu notebook, smartwatch etc...</p>
+       
+       <h2>O que São Servers</h2>
+       <h4>Sobre Servidores</h4>
+       <p>Servers é o servidor que pode está em uma empresa servindo de servidor da rede da empresa, ou na internet, na internet ele é utilizado para armazenar os arquivos de um site por exemplo, um site de vendas ele quem vai guardar as paginas com os pordutos por exemplo, ja na empresa ele pode ser usado como servidor de arquivos da equipe que trabalha na empresa onde os funcionários utilizam este servidor sem precisar de internet, apenas pela rede interna da empresa (intranet).</p>
+       
+       <h4>Hardware e Software em Servidores</h4>
+       <p>Hardware é toda a parte fisica de um servidor e Software é a parte logica, os programas que rodan no servidor.
+         Nos servidores podem rodar (ser Instalados), varios tipos de programas entre eles temos p windows Server, Ubunto, Fedora que são tipos de sistema operacional, um servidor web por exemplo ja roda outro tipo de software como o Apache e o Nginx.
+         o funcionamento funciona assim vamos dizer que você esta acessando um site quando você digita o endereço no navegador seu pc faz uma requisição via http para o servidor daquele site, vamos dizer que este servidor roda um sistema operacional CentOS, o sistema vai dizer para o software Nginx enviar a sua solicitação e enviar a solicitação para você de volta fazendo a pagina web que você esta acessando abrir no seu computador ou celular.
+       Já o Hardware é a parte fisica o gabinete do seu pc, seu celular ou a parte fisica que você toca no seu notebook, Tambem existe o servidor proxy e seu funcionamento é fazer o servido de ser o servidor de intarnet do proprio servidor que você esta usando, vamos dizer que no seu trabalho seja proibido acessar a netflix por exemplo, a equipe de TI que faz o gerenciamento dos servidores da empresa utiliza o servidor proxy para bloquear que os compiutadores da empresa utilizem os computadores para acessar o site da netflix na rede de internet da sua empresa por exemplo.</p>
+      
+       <h4>Hospedagem de Sites</h4>
+       <p>São as empresas que vai hospedar seu site, temos varias empresas que fornecem este serviço, é importante saber se a empresa fornece o serviço de certificado (SS), que fornece uma conexão segura ou seja criptografada de ponta a ponta, varias empreas fornecem a hospedagem do site, contas de e-mail, e certificado SS que garantem a conexão de ponta a ponta, é importante lembra que para ter seu site você precisa do seu endereço https, existem empresas que fornecem este registro com (www.seuendereço.com.br), é importante dizer que sites que possuem o final .br são sites de hospedagem brasileiro, um outro exemplo é um site .com que quer dizer que este site esta hospedado nos Estados Unidos(o final .com é um endereço dos Estados Unidos).</p>
+       
+       <h2>Linguagens de Programação</h2>
+       <h4>O que é</h4>
+       <p>É uma linguage escrita que utiliza regras especificas usadas para gerar programas, java script é um tipo de linguagem usada para fazer um site.
+         Hoje em dia as linguagem mais usadas são:
+         <ul>
+         <li> Python</li>
+         <li>Java </li>
+         <li>Java Script </li>
+         <li>C++ </li>
+      </ul>
+       </p>
+       <h4>Server-Side</h4>
+       <p>São exemplos de linguagens que rodan no servidor</p>
+       <ul>
+         <li>Java</li>
+         <li>Java Script</li>
+         <li>Rby</li>
+         <li>C#</li>
+       </ul>
+       <p>Uma dica é você aprender pelo menos uma linguegem de programação, de preferencia uma que a comunidade seja engajada em forum por exemplo, para que você possa obter ajuda facilmente caso precise, e lembre-se quem sabe ao menos uma linguagem de programação não morre de fome</p>
+       <h4>Client-Side</h4>
+       <p>Uma linguegem client-side é a que roda na maquina do cliente JavaScript por exemplo é uma linguagem que roda no pc do cliente, sim ele roda tanto no servidor quanto cliente</p>
+       <p>O v8 é uma aplicação que roda no google crome utilizando a linguegem java script, no cliente, e tambem roda no servidor utilizando o v8</p>
+
+       <h4>HTML não é uma linguagem de programação</h4>
+       <p>O html não é uma linguagem de programação, ela é uma linhuagem de marcação de texto para a interpretação do navegador</p>
+       
+       <h2>Introdução ao html na pratica</h2>
+       
+       <h2 id="como-funciona">Como Funciona o HTML</h2>
+       <smal><a href="#inicio">(Voltar)</a></smal>
+
+       <h4>Apresentando o Curso</h4>
+       
+       <p>Agora vou começar a apresentar as tags  que você poedera utilizar para montar a sua primeira pagina html na pratica.</p>
+
+       <h4>Ferramentas Utilizadas</h4>
+       <p>Vou deixar um link de um video no youtube para que você veja como baixar e instalar o visual studio code</p>
+       <p> o link está no final da pagina</p>
+       
+       <h4>Inspetor de Elementos</h4>
+       <p> O inspetor de elementos é a ferramenta do desenvolvedor vou explicar como utilizar a ferramenta a partir do google crome na parte de cima a direita bem em baixo do x para fechar o navegador tem os 3 pontinhos clique nos 3 pontinhos, vá até ferramentas e em seguida clique em ferramentas do desenvolvedor, irá abri uma pagina ao lado do seu navegador exebindo o codigo html da pagina que você está visualizando, perceba que se vou marcar algo escrito na página nesta nova área do desenvolvedor o navegador irá marcar os codigos na parte que você marcou no texto, isso é util para você começar a entender sobre o html e pode até mudar os codigos mudando os tipos de letras e a cor por exemplo, lógico que ao atualizar a pagina sua mudança desaparece mas com isso você consegue ter uma ideia de ficaria a pagina caso queira mudar algo.</p>
+
+       <h4>Estrutura Básica do html</h4>
+       <p>A estrutura do html é composta das tags.</p>
+       <p>html</p>
+       <p>head</p>
+       <p>head</p>
+       <p>body</p>
+       
+       <p>body</p>
+       <p> html</p>
+              
+       <h4>Falando Sbre Tags</h4>
+       <h2 id="O-que">O que são Tags</h2>
+       <smal><a href="#inicio">(Voltar)</a></smal>
+
+        <p> head é a partir que irá carregar primeiro no seu site e irá mostrar o nome da pagina que o cliente está visitando</p>
+       <p>Body quer dizer corpo ou seja tudo que aparece no seu site quando a pagina é aberta</p>
+       
+       <h4> Atributos das Tags</h4>
+       <p>Cada tag tem seu atributo por exemplo strong style usada em css, <strong style="color:rgb(16, 4, 71)"> consegue colocar </strong>uma cor especifica no seu texto, a tag i por sua x irá mostrar o texto italico, assim como a tag b ira mostrar em negrito</p>
+
+       <h4>Textos</h4>
+       <p> Vamos dizer que você queira colocar um titulo no seu texto para destacar você pode usar a tag h1 por exemplo</p>
+
+       <h4>Listas Ordenadas e não Ordenadas</h4>
+       <p> para criar uma lista ordenada você pode usar a tag ol</p>
+       <p>Exemplo</p>
+       <ol>
+         <li>Item 1</li>
+         <li>Item 2</li>
+         Listas não ordenadas você irá usar a tag ul 
+         <p>Exemplo</p>
+         <ul>item  1</ul>
+         <ul>item2</ul>
+       </ol>
+       <p>Perceba que na lista não ordenada não aparece a numeração antes da palavra item</p>
+
+       <h4>Links</h4>
+       <p> A tag para colocar um Link você ira utilizar a teg a href= e colocara o texto com o endereço do site que voce esta montando o link</p>
+       
+      <h2>Links para você utilizar</h2>
+
+      <a href="https://www.ime.usp.br/~song/mac344/slides02-evolution.pdf">Fonte Primeiros computadores</a>
+      <p></p>
+
+      <a href="https://www.hostinger.com.br/tutoriais/linguagens-de-programacao-mais-usadas#:~:text=Se%20tratando%20de%20desenvolvimento%20web,Java%2C%20JavaScript%20e%20C%2B%2B.">Fonte das linguagens mais usadas</a>
+      <p></p>
+      <a href="https://www.youtube.com/watch?v=LJcxoYIWn_k">Video de como baixar e instalar o visual studio code</a>
+      <p></p>
+      <hr>
+
+      </body>
+       </htmml>
